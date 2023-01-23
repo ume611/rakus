@@ -1,0 +1,41 @@
+
+Composerを使用（phpインストール済み）する場合
+
+Composerインストール
+
+下記サイトにアクセス。
+https://getcomposer.org/
+Getting Startedボタンをクリック->Installation - Windowsをクリック
+コマンドプロンプトでインストールされたか確認　入力->composer
+
+laravelインストール
+
+コマンドプロンプトでcomposer global require "laravel/installer"実行
+インストールされたか確認　laravel -V
+
+新規プロジェクトを作成
+
+最新のヴァージョン：laravel new　プロジェクト名
+ヴァージョン指定：composer create-project "laravel/laravel=5.7.*" プロジェクト名
+
+DBの設定
+
+.envファイルのデータベース名とパスワードを設定する。
+＊事前に空のデータベースを作成しておく。
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=sample
+DB_USERNAME=root
+DB_PASSWORD=
+
+
+
+
+
+
+
+
+
+
+
